@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function ActionBar({
-  cancelHref,
+  cancelHref = "/",
   nextHref,
   onNext,
   nextForm,
