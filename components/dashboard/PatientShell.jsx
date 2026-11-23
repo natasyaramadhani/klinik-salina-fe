@@ -131,7 +131,10 @@ export default function PatientShell({ breadcrumb = "Dashboard", children }) {
               <Bell className="h-4 w-4" />
             </button>
 
-            <div className="flex items-center gap-2.5">
+            <Link
+              href="/dashboard/profil"
+              className="flex items-center gap-2.5 rounded-xl px-2 py-1.5 transition hover:bg-neutral-50"
+            >
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#e9f0ec] text-xs font-bold text-[#3f6b50]">
                 {patientProfile.initials}
               </div>
@@ -144,7 +147,7 @@ export default function PatientShell({ breadcrumb = "Dashboard", children }) {
                 </p>
               </div>
               <ChevronDown className="h-4 w-4 text-neutral-400" />
-            </div>
+            </Link>
           </div>
         </header>
 
